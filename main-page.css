@@ -1,0 +1,46 @@
+
+body.page-main .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 20px;
+    margin-top: 60px; 
+}
+
+body.page-main .gallery-item {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 50 auto; 
+}
+
+body.page-main .item-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.news {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+

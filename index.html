@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+
+    <title>Мотоцикли</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main-page.css" media="screen and (min-width: 768px)">
+</head>
+<body>
+    <div class="filters">
+        <button class="filter-btn active" data-filter="random">Головна</button>
+        <button class="filter-btn" data-filter="category1">Дорожні</button>
+        <button class="filter-btn" data-filter="category2">Ендуро</button>
+    </div>
+
+    <div class="gallery"></div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+    <div class="news">
+        <h3>Новини про мотоцикли:</h3>
+        <p>Тут можна додати останні новини про мотоцикли.</p>
+    </div>
+    
+
+    <div class="social-icons">
+        <img src="insta.png" alt="Instagram">
+        <img src="tg.png" alt="Telegram">
+        <img src="whatsapp.png" alt="WhatsApp">
+        
+    </div>
+    <img src="telega.png" alt="Кошик" class="basket-icon">
+
+    <div id="update-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Оновлення</h2>
+            <p>Підпишіться на оновлення.</p>
+            <button id="update-yes">Так</button>
+            <button id="update-no">Ні</button>
+        </div>
+    </div>
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Кошик покупок</h2>
+            <div id="cart-items"></div>
+            <p id="total-price">Загальна вартість: 0 ₴</p>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <div class="chart-selector">
+        <label for="chart-type">Виберіть тип діаграми:</label>
+        <select id="chart-type">
+            <option value="pie">Pie</option>
+            <option value="bar">Bar</option>
+            <option value="line">Line</option>
+        </select>
+    </div>
+    <div class="chart-container">
+        <canvas id="chart"></canvas>
+    </div>
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" title="Піднятися вгору">&uarr;</button>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
